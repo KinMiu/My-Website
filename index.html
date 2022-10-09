@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Website</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">Logo</h1>
+      <nav>
+        <ul>
+          <li><a href="#hobi">Hobby</a></li>
+          <li><a href="mailto:prasetyoaldi971@gmail.com">Contact</a></li>
+        </ul>
+      </nav>
+      <input class="btn" type="submit" onclick="facebook()" value="Follow Saya !" />
+    </header>
+    <div class="container">
+      <div class="intro">
+        <p class="title">Hello, Aldi Prasetyo in Here!</p>
+        <p class="description">Newbie Web Developer From Home</p>
+        <img src="assets/images/Yu-Gi-Oh!_chara.jpg" alt="" class="img-foto" />
+      </div>
+    </div>
+    <div class="parallax">
+      <div class="about" id="hobi">
+        <p class="title">Saya Seorang Programmer</p>
+        <p class="description">Programmer Newbie yang sedang berusaha</p>
+        <div class="mt-10">
+          <input class="btn-2" type="submit" onclick="Wa()" value="Mari Kerjasama" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="card-item">
+            <img src="assets/icon/comic.png" alt="comic icon" class="icon" />
+            <p class="card-title">Komik</p>
+            <p class="card-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, officia!</p>
+          </div>
+          <div class="card-item">
+            <img src="assets/icon/book.png" alt="novel icon" class="icon" />
+            <p class="card-title">Novel</p>
+            <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, consectetur.</p>
+          </div>
+          <div class="card-item">
+            <img src="assets/icon/console.png" alt="game icon" class="icon" />
+            <p class="card-title">Game</p>
+            <p class="card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At facilis optio repellendus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="footer-title">&copy; M Aldi Prasetyo website 2022</p>
+    </footer>
+
+    <script>
+      function facebook() {
+        window.location.href = 'https://www.facebook.com/profile.php?id=100027567167016';
+      }
+
+      function Wa() {
+        window.location.href = 'https://wa.me/+6282194923939';
+      }
+    </script>
+  </body>
+</html>

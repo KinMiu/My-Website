@@ -1,0 +1,265 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #1a2238;
+  color: #eaeaea;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+}
+
+.logo:hover {
+  color: #d48a00;
+  transform: rotate(2deg);
+}
+
+.btn {
+  margin-right: 10px;
+  border: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: #d48a00;
+  border-radius: 6px;
+  color: #eaeaea;
+  cursor: pointer;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+nav ul {
+  display: flex;
+  padding: 20px;
+}
+
+li {
+  list-style-type: none;
+  padding-right: 20px;
+}
+
+li a {
+  display: inline-block;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+}
+
+li a:hover {
+  color: #d48a00;
+  transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+}
+
+a {
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+.container {
+  display: inline;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 120px 0;
+}
+
+.intro {
+  margin: 120px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.description {
+  margin-top: 5px;
+  font-size: 28px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.img-foto {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.parallax {
+  background-image: url('assets/images/yu-gi-oh-egyptian-god-slifer-obelisk-ra-hd-wallpaper-1920x1080.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #1a2238;
+  color: #eaeaea;
+  padding: 40px;
+}
+
+.mt-10 {
+  margin-top: 20px;
+}
+
+.btn-2 {
+  margin-right: 10px;
+  border: none;
+  font-size: 16px;
+  padding: 5px 10px;
+  background-color: #d48a00;
+  border-radius: 6px;
+  color: #eaeaea;
+  cursor: pointer;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.card-item {
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  background: #d48a00;
+  color: #1a2238;
+  box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.card-description {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.icon {
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+  padding: 4px;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #1a2238;
+  color: #eaeaea;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #1a2238;
+    z-index: 9;
+  }
+
+  footer {
+    padding-bottom: 70px;
+  }
+
+  .btn {
+    margin: 10px 10px;
+  }
+
+  .intro {
+    margin-top: 40px;
+    margin-bottom: 120px;
+  }
+
+  .about {
+    padding: 25px;
+  }
+
+  .description {
+    margin-bottom: 10px;
+  }
+
+  .img-foto {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .card {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .card-item {
+    width: 100%;
+    box-shadow: none;
+    opacity: 95%;
+  }
+
+  .parallax {
+    height: 100%;
+  }
+}
